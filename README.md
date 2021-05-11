@@ -1,1 +1,2 @@
-# lgfl-markup
+npm install
+gulp default

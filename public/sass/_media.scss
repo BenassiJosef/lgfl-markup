@@ -1,0 +1,54 @@
+@mixin nippon-transition {
+
+    -webkit-transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -ms-transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  @mixin container-1440 {
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  @mixin for-small-phone-only {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+  
+  @mixin for-phone-only {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin for-tablet-portrait {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin for-tablet-landscape {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+  
+  @mixin for-desktop {
+    @media (min-width: 1280px) {
+      @content;
+  
+    }
+  
+  }
+  
+  @mixin for-big-desktop-up {
+    @media (min-width: 1920px) {
+      @content;
+    }
+  
+  }

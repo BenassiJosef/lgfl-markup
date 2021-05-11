@@ -1,0 +1,29 @@
+header {
+  position: relative;
+  .cookies-contianer {
+    display: none;
+    > button {
+      right: 0px;
+      top: 24px;
+    }
+  }
+
+  #logo {
+    img {
+      width: 100px;
+    }
+  }
+}
+
+header {
+  @include for-phone-only {
+    .container {
+      padding: 0px;
+    }
+
+    #logo {
+      padding-top: 12px;
+      display: block;
+    }
+  }
+}
